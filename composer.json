@@ -1,12 +1,12 @@
 {
-  "name": "mohd-isa/laravel-settings",
+  "name": "sacram/laravel-settings",
   "description": "Laravel 5 Persistent Settings",
   "keywords": [
     "laravel",
     "laravel-settings",
     "persistent-settings"
   ],
-  "homepage": "https://github.com/mohd-isa/laravel-settings",
+  "homepage": "https://github.com/sacram/laravel-settings",
   "license": "MIT",
   "authors": [
     {
