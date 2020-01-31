@@ -19,8 +19,6 @@ class SettingsServiceProvider extends ServiceProvider
         $this->registerSettings();
 
         $this->registerCommands();
-
-        $this->registerBladeDirectives();
     }
 
     /**
@@ -31,6 +29,8 @@ class SettingsServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->registerConfig();
+        
+        $this->registerBladeDirectives();
     }
 
     /**
