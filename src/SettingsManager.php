@@ -39,7 +39,7 @@ class SettingsManager extends Manager
     {
         $config = $this->config('drivers.database');
 
-        return new DatabaseRepository($this->app['db'], $config['table']);
+        return new DatabaseRepository(\DB::connection(), $config['table']);
     }
 
     /**
@@ -51,6 +51,6 @@ class SettingsManager extends Manager
      */
     public function config($key, $default = null)
     {
-        return $this->app['config']->get('settings.'.$key, $default);
+        return config('settings.'.$key, $default);
     }
 }
